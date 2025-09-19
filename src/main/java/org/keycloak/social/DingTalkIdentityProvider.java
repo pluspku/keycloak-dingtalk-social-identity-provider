@@ -57,11 +57,11 @@ public class DingTalkIdentityProvider extends AbstractOAuth2IdentityProvider imp
     protected BrokeredIdentityContext extractIdentityFromProfile(EventBuilder event, JsonNode profile) {
         logger.info("extractIdentityFromProfile=" + profile.toString());
 
-        BrokeredIdentityContext user = new BrokeredIdentityContext((getJsonProperty(profile, "unionId")));
-
         String nick = getJsonProperty(profile, "nick");
         String email = getJsonProperty(profile, "email");
         String unionId = getJsonProperty(profile, "unionId");
+
+        BrokeredIdentityContext user = new BrokeredIdentityContext(unionId);
 
         if (nick != null && !nick.isEmpty()) {
             user.setUsername(nick);
