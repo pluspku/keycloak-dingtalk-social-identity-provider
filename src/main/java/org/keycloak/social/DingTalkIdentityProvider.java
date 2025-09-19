@@ -79,7 +79,6 @@ public class DingTalkIdentityProvider extends AbstractOAuth2IdentityProvider imp
         user.setUserAttribute("stateCode", getJsonProperty(profile, "stateCode"));
         user.setUserAttribute("unionId", getJsonProperty(profile, "unionId"));
         user.setUserAttribute("openId", getJsonProperty(profile, "openId"));
-        user.setIdpConfig(getConfig());
         user.setIdp(this);
 
         AbstractJsonUserAttributeMapper.storeUserProfileForMapper(user, profile, getConfig().getAlias());
