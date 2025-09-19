@@ -4,7 +4,7 @@
 
     <groupId>org.keycloak</groupId>
     <artifactId>keycloak-dingtalk-social-identity-provider</artifactId>
-    <version>23.0.4</version>
+    <version>26.3.4</version>
     <packaging>jar</packaging>
 
     <name>keycloak-dingtalk-social-identity-provider</name>
@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <keycloak.version>23.0.4</keycloak.version>
+        <keycloak.version>26.3.4</keycloak.version>
         <infinispan.version>14.0.21.Final</infinispan.version>
         <java.version>17</java.version>
         <maven.compiler.target>17</maven.compiler.target>
